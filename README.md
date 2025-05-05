@@ -32,7 +32,7 @@ Frontend: HTML, CSS, Bootstrap, JSP (JavaServer Pages)
 Backend: Java Servlets (controller logic), Java Beans (data models)
 Database: MySQL, leveraging JDBC for database interaction
 Server: Apache Tomcat (Servlet container)
-IDE: Eclipse or IntelliJ IDEA (recommended for web development in Java)
+IDE: NetBeans
 
 Database Design Overview
 The application generally involves the following tables:
