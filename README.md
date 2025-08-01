@@ -1,50 +1,104 @@
-Pharmacy Management System is a web-based dynamic application developed to automate and streamline the principal tasks involved in running a pharmacy. Implemented with Java technologies — namely JSP (JavaServer Pages), Servlets, and JDBC for database connections — the system offers administrative and customer-centric functionalities to facilitate efficient operations and an uninterrupted user experience.
+💊 Pharmacy Management System
+A dynamic web application that automates and streamlines the core operations of a pharmacy. Built with Java technologies like JSP, Servlets, and JDBC, the system supports both admin and customer roles for efficient management of medicines and orders.
 
-Purpose and Scope
-The main objective of this project is to minimize the use of manual record-keeping and enhance the precision and efficiency of pharmacy operations. It allows pharmacies to efficiently manage activities like medicine stock, user management, order processing, and tracking order history.
-It accommodates two primary roles:
-Admin: In charge of maintaining medicine information, managing orders, and maintaining system health.
-Customer/User: Can register, login, view available drugs, order, and see previous transactions.
+📌 1. Purpose & Scope
+The system is designed to:
 
-Core Functionalities
-1. User Management
-Registration: New users can register by giving basic information.
-Login Authentication: Secure login through email and password.
-Session Management: Users stay logged in while navigating; sessions are well-handled for logout and security.
+Eliminate manual record-keeping
 
-2. Medicine Management (Admin)
-Add New Medicine: Admin can give name, brand, quantity, price, and expiry date.
-Update Medicine Info: Update the existing records with current stock and price.
-Delete Medicine: Delete expired or obsolete medicines.
-View All Medicines: Show all medicines in stock.
-3. Medicine Browsing and Search (User)
-View all medicines on hand.
-Search medicines by brand or name.
+Enhance accuracy in stock and order handling
 
-4. Order Management
-Cart and Checkout: Users can pick multiple medicines, enter quantities, and order.
-Order Confirmation: Orders are stored with information such as user ID, medicine IDs, quantity, price, and delivery address.
-Order History: Users are able to view their previous orders with all information (medicine names, prices, dates, etc.).
-Admin Order View: Admin is able to view all user-placed orders along with user details and order details.
+Provide a seamless experience for both admins and customers
 
-Technology Stack
-Frontend: HTML, CSS, Bootstrap, JSP (JavaServer Pages)
-Backend: Java Servlets (controller logic), Java Beans (data models)
-Database: MySQL, leveraging JDBC for database interaction
-Server: Apache Tomcat (Servlet container)
-IDE: NetBeans
+👥 User Roles
+Admin
 
-Database Design Overview
-The application generally involves the following tables:
-users – Stores registered users' information
-medicines – Stores information about medicines
-orders – Stores orders placed
-order_items – Stores individual items of medicine tied to orders
-(Relationships: Single order can involve multiple medicines.)
+Manage medicines
 
-Benefits
-Seamless operations of pharmacy
-Less manual mistakes
-Enhanced user experience
-Order and stock management centralized
-Easily extended to accommodate online payments, email/SMS notification, and mobile displays
+Monitor and process orders
+
+Customer/User
+
+Register, login, browse medicines
+
+Place orders and view order history
+
+⚙️ 2. Core Functionalities
+🔐 2.1 User Management
+Register: Sign up with personal information
+
+Login: Secure authentication via email/password
+
+Session Handling: Persistent login and logout functionality
+
+💊 2.2 Medicine Management (Admin)
+Add: Insert new medicine details
+
+Update: Modify stock quantity, price, expiry
+
+Delete: Remove outdated or unavailable medicines
+
+View All: See full medicine inventory
+
+🔍 2.3 Medicine Browsing & Search (User)
+View available medicines
+
+Search by name or brand
+
+🛒 2.4 Order Management
+Cart & Checkout: Select medicines and place orders
+
+Order Confirmation: Store order details (user ID, items, quantity, price, address)
+
+Order History (User): View all past transactions
+
+Order Tracking (Admin): View and manage all user orders
+
+🧰 3. Technology Stack
+Layer	Technologies
+Frontend	HTML, CSS, Bootstrap, JSP
+Backend	Java Servlets, JavaBeans
+Database	MySQL with JDBC
+Server	Apache Tomcat
+IDE	NetBeans
+
+🗃️ 4. Database Design Overview
+Main Tables:
+
+users – Stores user account details
+
+medicines – Holds medicine inventory data
+
+orders – Captures order metadata
+
+order_items – Links multiple medicines to a single order
+
+🔁 One order → Multiple medicines (One-to-Many)
+
+✅ 5. Key Benefits
+Automates entire pharmacy workflow
+
+Reduces human error in stock/order handling
+
+Secure user authentication
+
+Real-time inventory and order tracking
+
+Scalable for:
+
+💳 Online payments
+
+📩 Email/SMS notifications
+
+📱 Mobile responsiveness
+
+Let me know if you'd like the following additions:
+
+✅ Project setup steps
+
+📸 UI screenshots
+
+📦 Deployment instructions
+
+📝 Future enhancement ideas
+
