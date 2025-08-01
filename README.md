@@ -1,104 +1,108 @@
-💊 Pharmacy Management System
-A dynamic web application that automates and streamlines the core operations of a pharmacy. Built with Java technologies like JSP, Servlets, and JDBC, the system supports both admin and customer roles for efficient management of medicines and orders.
+# 💊 Pharmacy Management System  
+**Digitizing and Streamlining Modern Pharmacy Operations**
 
-📌 1. Purpose & Scope
-The system is designed to:
+A dynamic, Java-based web application designed to automate core pharmacy functions, improve operational efficiency, and offer a seamless experience for both customers and administrators.
 
-Eliminate manual record-keeping
+---
 
-Enhance accuracy in stock and order handling
+## 📂 Table of Contents  
+- [🚀 Project Overview](#-project-overview)  
+- [🛠️ Key Features](#-key-features)  
+- [📊 Data Model Highlights](#-data-model-highlights)  
+- [⚙️ Technologies & Tools Used](#-technologies--tools-used)  
+- [📚 What I Learned](#-what-i-learned) 
+- [📄 License](#-license)  
+- [💬 Feedback](#-feedback)
 
-Provide a seamless experience for both admins and customers
+---
 
-👥 User Roles
-Admin
+## 🚀 Project Overview  
 
-Manage medicines
+The **Pharmacy Management System** is developed using **Java, JSP, Servlets**, and **MySQL** to automate and simplify the daily operations of a pharmacy.
 
-Monitor and process orders
+### 🎯 Key Objectives:
+- Eliminate manual record-keeping  
+- Improve order and inventory accuracy  
+- Provide a secure and user-friendly platform  
+- Enable centralized data access for admins and users  
 
-Customer/User
+---
 
-Register, login, browse medicines
+## 🛠️ Key Features
 
-Place orders and view order history
+### ✅ User Registration & Login
+- Secure signup and login using email and password  
+- Session management ensures users remain logged in during navigation
 
-⚙️ 2. Core Functionalities
-🔐 2.1 User Management
-Register: Sign up with personal information
+### 💊 Medicine Management (Admin Panel)
+- Add, update, delete, and view medicines  
+- Fields include name, brand, quantity, price, expiry date
 
-Login: Secure authentication via email/password
+### 🔍 Medicine Browsing & Search (User)
+- Users can view available medicines  
+- Filter and search by medicine name or brand
 
-Session Handling: Persistent login and logout functionality
+### 🛒 Order Placement & History
+- Add medicines to cart with specified quantity  
+- Order confirmation includes full itemized summary  
+- View complete order history with price and date
 
-💊 2.2 Medicine Management (Admin)
-Add: Insert new medicine details
+### 📦 Admin Order Monitoring
+- View all user orders along with order and user details  
+- Admin dashboard for tracking system operations
 
-Update: Modify stock quantity, price, expiry
+---
 
-Delete: Remove outdated or unavailable medicines
+## 📊 Data Model Highlights
 
-View All: See full medicine inventory
+### 🔹 Core Tables
+- `users` – Stores registered users' information  
+- `medicines` – Stores information about medicines  
+- `orders` – Tracks placed orders  
+- `order_items` – Stores individual medicine entries per order  
 
-🔍 2.3 Medicine Browsing & Search (User)
-View available medicines
+### 🔗 Table Relationships
+- **User → Orders** (One-to-Many)  
+- **Order → Order_Items** (One-to-Many)  
+- **Order_Item → Medicine** (Many-to-One)
 
-Search by name or brand
+---
 
-🛒 2.4 Order Management
-Cart & Checkout: Select medicines and place orders
+## ⚙️ Technologies & Tools Used
 
-Order Confirmation: Store order details (user ID, items, quantity, price, address)
+| Technology / Tool         | Purpose                              |
+|---------------------------|--------------------------------------|
+| Java Servlets             | Backend controller logic             |
+| JSP (JavaServer Pages)    | Dynamic UI rendering                 |
+| HTML, CSS, Bootstrap      | Frontend design and layout           |
+| JDBC                      | Java-MySQL database connectivity     |
+| MySQL                     | Relational database                  |
+| Apache Tomcat             | Web server / Servlet container       |
+| NetBeans IDE              | Development environment              |
 
-Order History (User): View all past transactions
+---
 
-Order Tracking (Admin): View and manage all user orders
+## 📚 What I Learned
 
-🧰 3. Technology Stack
-Layer	Technologies
-Frontend	HTML, CSS, Bootstrap, JSP
-Backend	Java Servlets, JavaBeans
-Database	MySQL with JDBC
-Server	Apache Tomcat
-IDE	NetBeans
+- Designing and implementing **MVC architecture** in Java  
+- Creating secure **authentication and session handling**  
+- Performing **CRUD operations** with JDBC  
+- Developing a **role-based system** (Admin/User)  
+- Structuring scalable **relational databases**  
+- Building responsive interfaces using **Bootstrap + JSP**
 
-🗃️ 4. Database Design Overview
-Main Tables:
+---
 
-users – Stores user account details
+## 📄 License
 
-medicines – Holds medicine inventory data
+This project is licensed under the **MIT License**.  
+Free to use, modify, and distribute with attribution.
 
-orders – Captures order metadata
+---
 
-order_items – Links multiple medicines to a single order
+## 💬 Feedback
 
-🔁 One order → Multiple medicines (One-to-Many)
+Have suggestions or want to contribute?  
+Feel free to open an issue or connect with me via [LinkedIn](#).
 
-✅ 5. Key Benefits
-Automates entire pharmacy workflow
-
-Reduces human error in stock/order handling
-
-Secure user authentication
-
-Real-time inventory and order tracking
-
-Scalable for:
-
-💳 Online payments
-
-📩 Email/SMS notifications
-
-📱 Mobile responsiveness
-
-Let me know if you'd like the following additions:
-
-✅ Project setup steps
-
-📸 UI screenshots
-
-📦 Deployment instructions
-
-📝 Future enhancement ideas
-
+---
